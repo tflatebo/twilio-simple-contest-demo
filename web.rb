@@ -2,7 +2,7 @@ require 'rubygems'
 require 'twilio-ruby'
 require 'sinatra'
  
-get '/sms-quickstart' do
+post '/sms-quickstart' do
   session["counter"] ||= 0
   sms_count = session["counter"]
   if sms_count == 0
